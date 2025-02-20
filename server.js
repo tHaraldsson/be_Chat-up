@@ -7,7 +7,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "https://chat-up-xi.vercel.app/", // Byt ut vid deployment
+    origin: "https://chat-up-xi.vercel.app", // Byt ut vid deployment
     methods: ["GET", "POST"],
   },
 });
