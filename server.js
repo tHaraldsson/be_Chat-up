@@ -7,9 +7,9 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:3000", // Byt ut vid deployment
-    methods: ["GET", "POST"]
-  }
+    origin: "https://chat-2g8331nsi-tharaldssons-projects.vercel.app", // Byt ut vid deployment
+    methods: ["GET", "POST"],
+  },
 });
 
 app.use(cors());
