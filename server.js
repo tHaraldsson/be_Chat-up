@@ -27,6 +27,10 @@ io.on("connection", (socket) => {
   });
 });
 
+app.get("/", (req, res) => {
+  res.send("WebSocket-servern är igång! 🚀");
+});
+
 const PORT = 5000;
 server.listen(PORT, () => {
   console.log(`Servern körs på port ${PORT}`);
